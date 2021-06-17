@@ -29,6 +29,22 @@ def test_column_names(data):
     # This also enforces the same order
     assert list(expected_colums) == list(these_columns)
 
+def test_price_range(data, min_price, max_price):
+    """
+    Test if the price is between the range (min and max price)
+    """
+    idx = data['price'].between(min_price, max_price)
+    df_test = data[~idx].copy()
+
+    assert len(df_test) == 0
+
+
+def test_row_count(data):
+    """
+    Test the size of the dataset. It should not be too small or too large.
+    """
+    assert 15000 < data.shape[0] < 1000000
+
 
 def test_neighborhood_names(data):
 
