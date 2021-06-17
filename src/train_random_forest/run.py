@@ -67,12 +67,12 @@ def go(args):
         X, y, test_size=args.val_size, stratify=X[args.stratify_by], random_state=args.random_seed
     )
 
-    logger.info("Preparing sklearn pipeline")
+    logger.info("Preparing Sklearn Pipeline - Training and Fitting")
 
     sk_pipe, processed_features = get_inference_pipeline(rf_config, args.max_tfidf_features)
 
     # Then fit it to the X_train, y_train data
-    logger.info("Fitting")
+    logger.info("Fitting the data...")
 
     ######################################
     # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
