@@ -1,6 +1,5 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
-You are working for a property management company renting rooms and properties for short periods of 
-time on various rental platforms. You need to estimate the typical price for a given property based 
+This Project aims to estimate the typical price for a given property based 
 on the price of similar properties. Your company receives new data in bulk every week. The model needs 
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
@@ -10,7 +9,7 @@ In this project you will build such a pipeline.
 
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
 - [Preliminary steps](#preliminary-steps)
-  * [Fork the Starter Kit](#fork-the-starter-kit)
+  * [Weights&Biases](#Weights&Biases)
   * [Create environment](#create-environment)
   * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
   * [Cookie cutter](#cookie-cutter)
@@ -32,22 +31,11 @@ In this project you will build such a pipeline.
 - [Cleaning up](#cleaning-up)
 
 ## Preliminary steps
-### Fork the Starter kit
-Go to [https://github.com/udacity/nd0821-c2-build-model-workflow-starter](https://github.com/udacity/nd0821-c2-build-model-workflow-starter)
-and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
-repository that is under your control. Now clone the repository locally so you can start working on it:
 
-```
-git clone https://github.com/[your github username]/nd0821-c2-build-model-workflow-starter.git
-```
+### Weights&Biases
+Build better models faster with experiment tracking, dataset versioning, and model management.
 
-and go into the repository:
-
-```
-cd nd0821-c2-build-model-workflow-starter
-```
-Commit and push to the repository often while you make progress towards the solution. Remember 
-to add meaningful commit messages.
+[W&B Project Workspace](https://wandb.ai/grabe/nyc_airbnb/overview?workspace=user-grabe)
 
 ### Create environment
 Make sure to have conda installed and ready, then create a new environment using the ``environment.yml``
