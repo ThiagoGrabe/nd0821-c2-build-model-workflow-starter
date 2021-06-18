@@ -11,3 +11,4 @@ dependencies:
   - pandas=1.2.4
   - pip:
       - wandb==0.10.21
+      - omegaconf==2.0.6

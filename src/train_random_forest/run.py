@@ -61,7 +61,7 @@ def go(args):
     X = pd.read_csv(trainval_local_path)
     y = X.pop("price")  # this removes the column "price" from X and puts it into y
 
-    logger.info(f"Minimum price: {y.min()}, Maximum price: {y.max()}")
+    logger.info(f"Check - Minimum price: {y.min()}, Maximum price: {y.max()}")
 
     X_train, X_val, y_train, y_val = train_test_split(
         X, y, test_size=args.val_size, stratify=X[args.stratify_by], random_state=args.random_seed
@@ -89,7 +89,7 @@ def go(args):
     logger.info(f"Score: {r_squared}")
     logger.info(f"MAE: {mae}")
 
-    logger.info("Exporting model")
+    logger.info("Exporting model...")
 
     # Save model package in the MLFlow sklearn format
     if os.path.exists("random_forest_dir"):
