@@ -218,6 +218,8 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     processed_features = ordinal_categorical + non_ordinal_categorical + zero_imputed + ["last_review", "name"]
 
     # Create random forest
+    logger.info('Hyperparamters are: ', rf_config)
+    print('Hyperparamters are: ', rf_config)
     random_Forest = RandomForestRegressor(**rf_config)
 
     ######################################
