@@ -4,11 +4,16 @@ channels:
   - defaults
 dependencies:
   - python=3.10.0
-  - pip=22.3.1
-  - requests=2.26.0
-  - mlflow==2.1.1
+  - pandas=1.5.2
   - scikit-learn=1.2
-  - pandas=1.2.3
+  - matplotlib=3.6.2
+  - plotly=5.11.0
+  - pillow=9.4.0
+  - pip=22.3.1
   - pip:
       - wandb==0.13.9
+      - setuptools==66.1.1
+      - protobuf==3.19.0
+      - omegaconf==2.2
+      - mlflow==2.1.1
       - git+https://github.com/ThiagoGrabe/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
