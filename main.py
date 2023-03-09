@@ -98,6 +98,7 @@ def go(config: DictConfig):
                 json.dump(dict(config["modeling"]["random_forest"].items()), fp)  # DO NOT TOUCH
 
             logger.info(rf_config)
+            print('Hyperparamters are: ', rf_config)
 
             _ = mlflow.run(
                 f"{config['main']['source_repository']}/train_random_forest",
